@@ -1,0 +1,10 @@
+section.reg
+    .container
+        h2.reg__title Всего несколько кликов до первой #[b победы]
+        form.reg__form(action="")
+            each item in content.reg.list
+                input.reg__input(type="text" class=item['class'] placeholder=item['placeholder' ])
+            .reg__persdata-wrp
+                input.reg__persdata(type="checkbox" id="data")
+                label.reg__persdata-text(for="data")= content.reg.text
+            button.button.reg__button(type="submit")= content.reg.button

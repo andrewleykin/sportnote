@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="app/css/main.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
     <body>
-      <div class="wrapper">
+      <div class="wrapper registration">
         <header class="header">
           <div class="container">
             <div class="header__logo-wrp"><a class="logo__link" href="index.html"><img class="logo" src="app/img/content/Logo.png" alt="Логотип"></a></div>
@@ -30,16 +30,23 @@
             </div>
           </div>
         </header>
-        <section class="hero">
+        <section class="reg">
           <div class="container">
-            <div class="hero__content">
-              <h2 class="hero__title">Добро пожаловать!</h2>
-              <form class="hero__form" action="">
-                <input class="hero__input login" type="text" placeholder="Логин">
-                <input class="hero__input password" type="text" placeholder="Пароль">
-                <button class="hero__button button" type="submit">Войти</button>
-              </form><span class="hero__reg">Зарегистрироваться</span><span class="hero__paswrec">Забыли пароль?</span>
-            </div>
+            <h2 class="reg__title">Всего несколько кликов до первой <b>победы</b></h2>
+            <form class="reg__form" action="">
+              <input class="reg__input" type="text" placeholder="ФИО">
+              <input class="reg__input" type="text" placeholder="Год рождения">
+              <input class="reg__input" type="text" placeholder="Вид спорта">
+              <input class="reg__input" type="text" placeholder="Почта">
+              <input class="reg__input" type="text" placeholder="Телефон">
+              <input class="reg__input" type="text" placeholder="Пароль">
+              <input class="reg__input" type="text" placeholder="Подтверждение пароля">
+              <div class="reg__persdata-wrp">
+                <input class="reg__persdata" type="checkbox" id="data">
+                <label class="reg__persdata-text" for="data">Согласие с обработкой ПД</label>
+              </div>
+              <button class="button reg__button" type="submit">Зарегистрироваться</button>
+            </form>
           </div>
         </section>
         <footer class="footer">

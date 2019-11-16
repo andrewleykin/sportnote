@@ -1,6 +1,50 @@
 {
-  "content": {
-    " " : " ",
-    " " : " "
+  "header" : {
+    "button": "Регистрация",
+    "href": "registration.html"
+  },
+  "hero": {
+    "title": "Добро пожаловать!",
+    "button": "Войти",
+    "reg": "Зарегистрироваться",
+    "paswrec": "Забыли пароль?"
+  },
+  "reg": {
+    "button": "Зарегистрироваться",
+    "text": "Согласие с обработкой ПД",
+    "list": [
+      {
+        "class": "",
+        "placeholder": "ФИО"
+      },
+      {
+        "class": "",
+        "placeholder": "Год рождения"
+      },
+      {
+        "class": "",
+        "placeholder": "Вид спорта"
+      },
+      {
+        "class": "",
+        "placeholder": "Почта"
+      },
+      {
+        "class": "",
+        "placeholder": "Телефон"
+      },
+      {
+        "class": "",
+        "placeholder": "Пароль"
+      },
+      {
+        "class": "",
+        "placeholder": "Подтверждение пароля"
+      }
+    ]
+  },
+  "footer": {
+    "comp": "Sport Note LTD",
+    "reserved": "Все права защищены © 2019"
   }
 }

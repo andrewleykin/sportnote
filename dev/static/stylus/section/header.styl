@@ -1,0 +1,46 @@
+.header 
+    position fixed
+    top: 57px
+    z-index 1
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 1170px;
+    justify-content: center;
+
+.header .container
+    display flex
+    align-items: center
+    
+.header__logo-wrp
+    width: 241px;
+    height: 95px;
+    margin-right 50px
+    cursor pointer
+
+.header__button
+    margin-right 68px
+
+.header__socials
+    width: 38px;
+    height: 34px;
+    cursor pointer
+    & svg 
+        width 100%
+        height 100%
+        fill: #fff
+
+.registration .header .header__logo-wrp img
+    filter: brightness(0)
+
+
+.registration .header .header__button
+    background-color: #21a2ad
+    color #fff
+    border-radius: 30px
+    padding: 14px 45px
+    &:hover
+        color: #000
+        background-color: #ddd
+.registration .header .header__socials
+    & svg 
+        fill: #000
