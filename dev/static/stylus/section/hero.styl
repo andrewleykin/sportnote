@@ -1,10 +1,12 @@
-.hero
+.wrapper.index
+    height 100%
     background:url(../img/content/hero.jpg) 
     background-repeat: no-repeat
     background-size: cover
-    position relative
-    color: #fff
     z-index 0
+    display flex
+    flex-direction: column
+    justify-content space-between
     &:before
         content: ""
         position absolute
@@ -14,6 +16,22 @@
         height 100%
         background-color rgba(0,0,0,0.6)
         z-index -1
+.hero
+    // background:url(../img/content/hero.jpg) 
+    // background-repeat: no-repeat
+    // background-size: cover
+    // position relative
+    color: #fff
+    z-index 0
+    // &:before
+    //     content: ""
+    //     position absolute
+    //     top 0
+    //     left 0
+    //     width 100%
+    //     height 100%
+    //     background-color rgba(0,0,0,0.6)
+    //     z-index -1
 
 .hero .container
     display flex
@@ -27,16 +45,33 @@
     border: solid 2px #ffffff
     border-radius: 25px
     border-bottom-left-radius: 0px
-    margin 272px 0 293px 0
+    margin 272px 0 15px 0
+    @media (max-width: 1200px) 
+        margin: 200px 0 15px;
+    @media (max-width: 420px)
+        margin-top 150px
 
 .hero__title
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: rem(30)
     font-weight: normal;
     font-style: normal;
-    padding-top: 74px
+    padding-top: 70px
     padding-bottom 64px;
     line-height: 0.28;
+    @media (max-width: 1200px) 
+        padding-top 60px
+        padding-bottom 50px;
+    @media (max-width: 900px) 
+        padding-top 50px
+        padding-bottom 35px
+    @media (max-width: 768px)
+        padding-top 40px
+        padding-bottom 30px
+    @media (max-width: 420px)
+        padding-top 30px
+        padding-bottom 20px
+        font-size: rem(25)
 
 .hero__form
     display flex
@@ -44,6 +79,18 @@
     align-items: center
     margin-bottom 32px
     padding 0 98px
+    @media (max-width: 1200px) 
+        margin-bottom 22px
+        padding 0 78px
+    @media (max-width: 900px) 
+        margin-bottom 17px
+        padding 0 63px
+    @media (max-width: 768px)
+        margin-bottom 15px
+        padding 0 45px
+    @media (max-width: 420px)
+        margin-bottom 10px
+        padding: 0 20px
 
 .hero__input
     width: 420px;
@@ -53,7 +100,7 @@
     background: none
     margin-bottom 18px
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: rem(30)
     font-weight: normal;
     font-style: normal;
     line-height: 0.28;
@@ -65,29 +112,71 @@
         border-bottom-left-radius: 0px
     &.password
         border-top-left-radius: 0px
-
+    @media (max-width: 1200px) 
+        width 350px
+        height 60px
+        margin-bottom 15px
+        padding-left 20px
+        font-size: rem(26)
+    @media (max-width: 900px) 
+        width 320px
+        height 50px
+        margin-bottom 12px
+        padding-left 15px
+        font-size: rem(23)
+    @media (max-width: 768px)
+        width 270px
+        height 40px
+        margin-bottom 10px
+        font-size: rem(20)
+    @media (max-width: 420px)
+        width 240px
+        height 35px
+        font-size: rem(18)
 .hero__button.button
     border-top-left-radius: 0px
     border-top-right-radius: 0px
     padding: 24px 67px
     font-family: Montserrat;
-    font-size: 30px;
-    line-height: 20px;
+    font-size: rem(30)
+    line-height: rem(20)
     font-weight: normal;
     font-style: normal;
     color: #21a2ad;
-
+    @media (max-width: 1200px) 
+        padding 20px 60px
+        font-size: rem(26)
+    @media (max-width: 900px) 
+        padding: 16px 40px
+    @media (max-width: 768px)
+        padding 13px 30px
+     @media (max-width: 420px)
+         padding 12px 25px
+    
 
 .hero__reg,.hero__paswrec
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: rem(20)
     font-weight: normal;
-    font-style: normal;
     color: #ffffff;
     cursor pointer
+    @media (max-width: 768px)
+        font-size: rem(18)
+    @media (max-width: 420px)
+        font-size: rem(16)
 
 .hero__reg
     margin-bottom:10px
+    @media (max-width: 768px)
+        margin-bottom 8px
 
 .hero__paswrec
     padding-bottom 45px
+    @media (max-width: 1200px) 
+        padding-bottom 35px
+    @media (max-width: 900px) 
+        padding-bottom 30px
+    @media (max-width: 768px)
+        padding-bottom 25px
+    @media (max-width: 420px)
+        padding-bottom 20px
