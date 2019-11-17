@@ -14,6 +14,8 @@
     border-radius: 25px
     border-bottom-left-radius: 0px
     margin 272px 0 15px 0
+    @media (max-width: 1600px) 
+        margin: 230px 0 15px
     @media (max-width: 1200px) 
         margin: 200px 0 15px;
     @media (max-width: 420px)
@@ -26,6 +28,10 @@
     padding-top: 70px
     padding-bottom 64px;
     line-height: 0.28;
+    @media (max-width: 1600px) 
+        font-size: rem(28)
+        padding-top 65px
+        padding-bottom 55px 
     @media (max-width: 1200px) 
         padding-top 60px
         padding-bottom 50px;
@@ -46,6 +52,9 @@
     align-items: center
     margin-bottom 32px
     padding 0 98px
+    @media (max-width: 1600px) 
+        margin-bottom 28px
+        padding: 0 88px
     @media (max-width: 1200px) 
         margin-bottom 22px
         padding 0 78px
@@ -79,12 +88,16 @@
         border-bottom-left-radius: 0px
     &.password
         border-top-left-radius: 0px
+    @media (max-width: 1600px) 
+        width 380px
+        height 65px
+        padding-left 25px
+        font-size: rem(26)
     @media (max-width: 1200px) 
         width 350px
         height 60px
         margin-bottom 15px
         padding-left 20px
-        font-size: rem(26)
     @media (max-width: 900px) 
         width 320px
         height 50px
@@ -110,6 +123,9 @@
     font-weight: normal;
     font-style: normal;
     color: #21a2ad;
+    @media (max-width: 1600px) 
+        padding: 22px 63px
+        font-size: rem(28)
     @media (max-width: 1200px) 
         padding 20px 60px
         font-size: rem(26)
@@ -121,7 +137,8 @@
          padding 12px 25px
     
 
-.hero__reg,.hero__paswrec
+.hero__reg,
+.hero__paswrec
     font-size: rem(20)
     font-weight: normal;
     color: #ffffff;
@@ -138,6 +155,8 @@
 
 .hero__paswrec
     padding-bottom 45px
+    @media (max-width: 1600px) 
+        padding-bottom 40px
     @media (max-width: 1200px) 
         padding-bottom 35px
     @media (max-width: 900px) 
