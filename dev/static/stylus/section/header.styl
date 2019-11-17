@@ -13,6 +13,41 @@
         top 22px
     @media (max-width: 768px) 
         width 100%
+    &.header-black
+        .header__logo-wrp
+            .logo
+                fill: #000
+    &.header-black
+        .header__button
+            background-color: #21a2ad
+            color #fff
+            padding: 14px 45px
+            @media (max-width: 900px) 
+                padding: 10px 25px;
+            @media (max-width: 420px)
+                padding 8px 15px
+            @media (max-width: 360px)
+                padding 7px 13px
+            &:hover
+                color: #000
+                background-color: #ddd
+            &:focus
+                color #000
+                background-color: #eeeaaa
+            &:active
+                color #000
+                background-color: #cccaaa
+        
+    &.header-black 
+        .menu__link
+            color #000
+        &:hover
+            color: #21a2ad
+
+    &.header-black
+        .header__socials
+            svg 
+                fill: #000
 
 .header__menu
     margin-right 60px
@@ -89,35 +124,4 @@
         width 24px
         height 20px
 
-.header.black .header__logo-wrp img
-    filter: brightness(0)
-
-.header.black .header__button
-    background-color: #21a2ad
-    color #fff
-    padding: 14px 45px
-    @media (max-width: 900px) 
-        padding: 10px 25px;
-    @media (max-width: 420px)
-        padding 8px 15px
-    @media (max-width: 360px)
-        padding 7px 13px
-     &:hover
-        color: #000
-        background-color: #ddd
-    &:focus
-        color #000
-        background-color: #eeeaaa
-    &:active
-        color #000
-        background-color: #cccaaa
-
-.header.black .menu__link
-    color #000
-    &:hover
-        color: #21a2ad
-
-.header.black .header__socials
-    & svg 
-        fill: #000
 
