@@ -1,0 +1,10 @@
+header.header(class="header-" + style)
+    .container
+        .header__logo-wrp
+            include ../modules/logo
+        .header__menu 
+            include ../modules/menu
+        a.header__button-link(href=content.header.href)
+            button.header__button.button= content.header.button
+        .header__socials
+            +icon('telegram')

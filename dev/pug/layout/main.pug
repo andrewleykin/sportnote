@@ -20,9 +20,10 @@ html(lang="ru-RU")
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
 		<![endif]-->
 		body
-			.wrapper
+			.wrapper(class=page)
 				include ../section/header
-				block content
+				main.main
+					block content
 				include ../section/footer
 			script(src="app/js/libs.min.js")
 			script(src="app/js/app.js")

@@ -1,0 +1,121 @@
+
+.reg
+    display flex
+    flex-direction: column
+    align-items: center
+    
+.reg__title
+    margin-top 231px;
+    margin-bottom 20px;
+    font-size: rem(30);
+    font-weight: normal;
+    font-stretch: normal;
+    text-align: center
+    @media (max-width: 1200px) 
+        margin-top 200px
+    @media (max-width: 900px) 
+        margin-top 180px
+    @media (max-width: 768px) 
+        margin-top 160px
+    @media (max-width: 420px) 
+        margin-top 150px
+    b
+        font-weight: 800
+.reg__form
+    display flex
+    flex-direction: column
+    align-items: center
+    margin-bottom 15px
+.reg__input
+    width: 420px;
+    height: 56px;
+    border-radius: 25.5px;
+    border: solid 2px #000;
+    padding-left 30px
+    font-family: Montserrat;
+    font-size: rem(20)
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.42;
+    letter-spacing: normal;
+    text-align: left;
+    margin-bottom 14px;
+    @media (max-width: 1200px) 
+        width 380px
+        height 50px
+        padding-left: 25px
+        margin-bottom 12px
+    @media (max-width: 768px)
+        width 300px
+        height 45px
+        padding-left 20px
+        margin-bottom 10px
+    &::placeholder
+        color: #000
+
+.reg__input:nth-child(7)
+    margin-bottom 0
+
+.reg__persdata-wrp
+    margin: 31px 0
+    width: 100%;
+    @media (max-width: 768px) 
+        margin 25px 0
+.reg__persdata-text
+    font-size: rem(20)
+    font-weight: normal;
+    font-style: normal;
+    position relative
+    padding-left: 60px
+    @media (max-width: 768px)
+        padding-left 45px 
+    &:before
+        content: ""
+        position absolute
+        top: -50%
+        left 0px
+        width 49px
+        height 46px
+        border-radius: 50%;
+        border: solid 2px #000;
+        background-color: #ffffff;
+        @media (max-width: 768px) 
+            width 34px
+            height 32px
+.reg__persdata-text:after
+    content: ""
+    opacity 0
+    position absolute
+    top: -1px
+    left 9px
+    width 22px
+    height 22px
+    border-radius: 50%;
+    border: solid 2px #000;
+    background-color: #000;
+    transition: 0.15s
+    @media (max-width: 900px) 
+        width 16px
+        height 16px
+
+.reg__persdata:checked + .reg__persdata-text:after
+    opacity 1
+
+.reg__persdata
+    width: 50px;
+    height: 45px;
+    display none
+
+.reg__button.button
+    background-color #21a2ad
+    color #fff
+    &:hover
+        color: #000
+        background-color: #ddd
+    &:focus
+        color #000
+        background-color: #eeeaaa
+    &:active
+        color #000
+        background-color: #cccaaa
