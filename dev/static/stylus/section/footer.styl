@@ -1,13 +1,13 @@
 .footer
     margin-bottom 20px
     color: #fff
-    @media (max-width: 1200px) 
+    @media (max-width: breakpoint-tabletL) 
         margin-bottom 10px
     &.footer-black
         .footer__comp,
         .footer__reserved
             color: #000
-        @media (max-width: 900px)
+        @media (max-width: breakpoint-tabletM)
             position static
             transform: translateX(0)
             margin-bottom 10px
@@ -21,9 +21,9 @@
     font-style: normal;
     color: #ffffff;
     line-height: 1;
-    @media (max-width: 1600px) 
+    @media (max-width: breakpoint-laptop) 
         font-size: rem(18)
-    @media (max-width: 900px) 
+    @media (max-width: breakpoint-tabletM) 
         font-size: rem(16)
-    @media (max-width: 420px)
+    @media (max-width: breakpoint-phoneM)
         font-size: rem(12)
