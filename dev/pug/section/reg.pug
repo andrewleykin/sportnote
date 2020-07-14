@@ -1,8 +1,9 @@
 section.reg
     h2.reg__title Всего несколько кликов до первой #[b победы]
-    form.reg__form(action="")
+    form.reg__form(data-validation)
         each item in content.reg.list
-            input.reg__input(type="text" class=item['class'] placeholder=item['placeholder' ])
+            .reg__group
+                input.reg__input(type=item.type class=item.class placeholder=item.placeholder data-name=item.data)
         .reg__persdata-wrp
             input.reg__persdata(type="checkbox" id="data")
             label.reg__persdata-text(for="data")= content.reg.text

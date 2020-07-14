@@ -36,14 +36,28 @@
         <main class="main">
           <section class="reg">
             <h2 class="reg__title">Всего несколько кликов до первой <b>победы</b></h2>
-            <form class="reg__form" action="">
-              <input class="reg__input" type="text" placeholder="ФИО">
-              <input class="reg__input" type="text" placeholder="Год рождения">
-              <input class="reg__input" type="text" placeholder="Вид спорта">
-              <input class="reg__input" type="text" placeholder="Почта">
-              <input class="reg__input" type="text" placeholder="Телефон">
-              <input class="reg__input" type="text" placeholder="Пароль">
-              <input class="reg__input" type="text" placeholder="Подтверждение пароля">
+            <form class="reg__form" data-validation>
+              <div class="reg__group">
+                <input class="reg__input" type="text" placeholder="ФИО" data-name="name">
+              </div>
+              <div class="reg__group">
+                <input class="reg__input js-data" type="text" placeholder="Год рождения" data-name="num">
+              </div>
+              <div class="reg__group">
+                <input class="reg__input" type="text" placeholder="Вид спорта" data-name="name">
+              </div>
+              <div class="reg__group">
+                <input class="reg__input" type="email" placeholder="Почта" data-name="email">
+              </div>
+              <div class="reg__group">
+                <input class="reg__input js-phone" type="text" placeholder="Телефон" data-name="phone">
+              </div>
+              <div class="reg__group">
+                <input class="reg__input js-password" type="text" placeholder="Пароль">
+              </div>
+              <div class="reg__group">
+                <input class="reg__input js-password" type="text" placeholder="Подтверждение пароля">
+              </div>
               <div class="reg__persdata-wrp">
                 <input class="reg__persdata" type="checkbox" id="data">
                 <label class="reg__persdata-text" for="data">Согласие с обработкой ПД</label>

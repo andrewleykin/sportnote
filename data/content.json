@@ -15,31 +15,43 @@
     "list": [
       {
         "class": "",
-        "placeholder": "ФИО"
+        "placeholder": "ФИО",
+        "type": "text",
+        "data": "name"
+      },
+      {
+        "class": "js-data",
+        "placeholder": "Год рождения",
+        "type": "text",
+        "data": "num"
       },
       {
         "class": "",
-        "placeholder": "Год рождения"
+        "placeholder": "Вид спорта",
+        "type": "text",
+        "data": "name"
       },
       {
         "class": "",
-        "placeholder": "Вид спорта"
+        "placeholder": "Почта",
+        "type": "email",
+        "data": "email"
       },
       {
-        "class": "",
-        "placeholder": "Почта"
+        "class": "js-phone",
+        "placeholder": "Телефон",
+        "type": "text",
+        "data": "phone"
       },
       {
-        "class": "",
-        "placeholder": "Телефон"
+        "class": "js-password",
+        "placeholder": "Пароль",
+        "type": "text"
       },
       {
-        "class": "",
-        "placeholder": "Пароль"
-      },
-      {
-        "class": "",
-        "placeholder": "Подтверждение пароля"
+        "class": "js-password",
+        "placeholder": "Подтверждение пароля",
+        "type": "text"
       }
     ]
   },
