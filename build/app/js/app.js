@@ -1,8 +1,19 @@
 // Начальная функция
 
 (function(){
-	$('.js-data').mask('00.00.0000');
-	$('.js-phone').mask('+7(000)000-00-00');
+	if ($('.js-data').length > 0) {
+		$('.js-data').mask('00.00.0000');
+	}
+
+	if ($('.js-phone').length > 0) {
+		$('.js-phone').mask('+7(000)000-00-00');
+	}
+
+	if ($('.reg__input-file').length > 0) {
+		$('.reg__input-file').on('change', e => {
+			$('.reg__group-file label').text(e.target.files.item(0).name)
+		})
+	}
 })();
 
 // функция валидации формы

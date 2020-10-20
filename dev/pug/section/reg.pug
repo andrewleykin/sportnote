@@ -1,10 +1,13 @@
 section.reg
     h2.reg__title Всего несколько кликов до первой #[b победы]
-    form.reg__form(data-validation)
+    form.reg__form(data-validation enctype="multipart/form-data")
         each item in content.reg.list
             .reg__group
                 input.reg__input(type=item.type class=item.class placeholder=item.placeholder data-name=item.data)
+        .reg__group.reg__group-file
+            label.reg__group-file-label(for="file") Выберите аватарку
+            input.reg__input.reg__input-file(id="file" type="file" accept="image/jpeg,image/png,image/gif")
         .reg__persdata-wrp
             input.reg__persdata(type="checkbox" id="data")
-            label.reg__persdata-text(for="data")= content.reg.text
+            label.reg__persdata-text(for="data")!= content.reg.text
         button.button.reg__button(type="submit")= content.reg.button
