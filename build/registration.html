@@ -36,7 +36,7 @@
         <main class="main">
           <section class="reg">
             <h2 class="reg__title">Всего несколько кликов до первой <b>победы</b></h2>
-            <form class="reg__form" data-validation>
+            <form class="reg__form" data-validation enctype="multipart/form-data">
               <div class="reg__group">
                 <input class="reg__input" type="text" placeholder="ФИО" data-name="name">
               </div>
@@ -58,16 +58,20 @@
               <div class="reg__group">
                 <input class="reg__input js-password" type="text" placeholder="Подтверждение пароля">
               </div>
+              <div class="reg__group reg__group-file">
+                <label class="reg__group-file-label" for="file">Выберите аватарку</label>
+                <input class="reg__input reg__input-file" id="file" type="file" accept="image/jpeg,image/png,image/gif">
+              </div>
               <div class="reg__persdata-wrp">
                 <input class="reg__persdata" type="checkbox" id="data">
-                <label class="reg__persdata-text" for="data">Согласие с обработкой ПД</label>
+                <label class="reg__persdata-text" for="data">Согласие с <a href='privacy.html'>обработкой ПД</a></label>
               </div>
               <button class="button reg__button" type="submit">Зарегистрироваться</button>
             </form>
           </section>
         </main>
         <footer class="footer footer-black">
-          <div class="footer__copyright"><span class="footer__comp">Sport Note LTD</span><span class="footer__reserved">Все права защищены © 2019</span></div>
+          <div class="footer__copyright"><span class="footer__comp">Sport Note LTD</span><span class="footer__reserved">Все права защищены © 2020</span></div>
         </footer>
       </div>
       <script src="app/js/libs.min.js"></script>
