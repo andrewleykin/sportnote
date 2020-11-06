@@ -1,0 +1,1077 @@
+.athlete-page {
+  padding-top 150px
+  padding-bottom 50px
+}
+
+.section-outer {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.athlete-info {
+  margin-bottom: 15px;
+}
+
+.athlete-info .section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.athlete-info-avatar {
+  margin-right: 90px;
+  position: relative;
+  max-width: 340px;
+}
+
+.athlete-info-avatar__photo {
+  width: 340px;
+  height: 360px;
+  border-radius: 1rem;
+}
+
+.athlete-info-avatar__fullname {
+  background-color: #ffffff;
+  position: absolute;
+  display: block;
+  top: 260px;
+  left: 20px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.athlete-info-avatar__fullname .name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: block;
+}
+
+.athlete-info-avatar__fullname .date-birth {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9375rem;
+}
+
+.athlete-info-charts {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.125rem;
+  margin-top: 26px;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.athlete-info-charts__title {
+  font-weight: bold;
+}
+
+.athlete-info-charts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.athlete-info-charts__wrapper .chart-item {
+  text-align: center;
+  width: 130px;
+  color: #8c9198;
+  margin-bottom: 15px;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg-wrapper {
+  position: relative;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg {
+  display: block;
+  margin: 0px auto;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg.pink {
+  stroke: url(#pink);
+}
+
+.athlete-info-charts__wrapper .chart-item__svg.pink + .chart-item__number {
+  color: #e61d56;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg.purple {
+  stroke: url(#purple);
+}
+
+.athlete-info-charts__wrapper .chart-item__svg.purple + .chart-item__number {
+  color: #c81ac7;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg.dodgerblue {
+  stroke: url(#dodgerblue);
+}
+
+.athlete-info-charts__wrapper .chart-item__svg.dodgerblue + .chart-item__number {
+  color: #1c6fdf;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg.lime {
+  stroke: url(#lime);
+}
+
+.athlete-info-charts__wrapper .chart-item__svg.lime + .chart-item__number {
+  color: #27ca08;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg .circle-bg {
+  fill: none;
+  stroke: #d7d7d7;
+  stroke-width: 4;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg .circle {
+  fill: none;
+  stroke-width: 4;
+  -webkit-animation: progress 1.5s ease-out forwards;
+          animation: progress 1.5s ease-out forwards;
+}
+
+.athlete-info-charts__wrapper .chart-item__svg .number {
+  font-family: 'Montserrat', sans-serif;
+  text-anchor: middle;
+  fill: #666;
+  stroke: none;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.athlete-info-charts__wrapper .chart-item__number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.athlete-info-charts__wrapper .chart-item__name {
+  font-size: 1.25rem;
+}
+
+.athlete-info-charts__coach {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.athlete-info-charts__coach .name {
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .athlete-info-avatar {
+    margin-right: 35px;
+  }
+  .athlete-info-charts {
+    margin-top: 0;
+  }
+  .athlete-info-charts__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .athlete-info-charts__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto 20px auto;
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .athlete-info .section-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .athlete-info-avatar {
+    margin: 0 auto;
+  }
+  .athlete-info-charts {
+    margin-top: 15px;
+  }
+  .athlete-info-charts__title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .athlete-info-charts__wrapper {
+    margin-bottom: 20px;
+  }
+  .athlete-info-charts__coach {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+  .athlete-info-avatar__photo {
+    height: auto;
+    width: 260px;
+  }
+  .athlete-info-avatar__fullname {
+    width: 240px;
+    top: 216px;
+    left: 10px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .athlete-info-avatar__fullname .name {
+    font-size: 1.225rem;
+  }
+  .athlete-info-charts__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto 20px auto;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .athlete-info-charts__wrapper .chart-item {
+    width: 110px;
+    margin: 0 15px 15px;
+  }
+  .athlete-info-charts__coach {
+    text-align: center;
+  }
+}
+
+.training-statistics {
+  overflow: hidden;
+  margin-bottom: 15px;
+  color: #4e4f53;
+}
+
+.training-statistics *:focus {
+  outline: none;
+}
+
+.training-statistics .section-inner {
+  background-color: #f8f9fa;
+  padding: 15px 50px 32px;
+  border-radius: 1rem;
+}
+
+.training-statistics__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.training-statistics__table-header {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 0.875rem;
+  color: #a7a7a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #dddddd;
+}
+
+.training-statistics__table-header .date-location {
+  display: block;
+  width: 130px;
+}
+
+.training-statistics__table-header .athlete-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  padding-left: 50px;
+}
+
+.training-statistics-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.training-statistics .main-slider {
+  position: relative;
+  width: 130px;
+  margin-bottom: 50px;
+  min-width: 0;
+}
+
+.training-statistics .main-slider .slick-track {
+  display: block;
+}
+
+.training-statistics .main-slider .slick-list {
+  overflow: hidden;
+}
+
+.training-statistics .main-slider .slick-arrow {
+  position: absolute;
+  bottom: -45px;
+  z-index: 10;
+  font-size: 0;
+  width: 15px;
+  height: 10px;
+  border: 0;
+  padding: 20px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 15px 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.training-statistics .main-slider .slick-arrow:hover {
+  -webkit-box-shadow: 0 0 0 2px #e4e4e4;
+          box-shadow: 0 0 0 2px #e4e4e4;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.training-statistics .main-slider .slick-arrow.slick-prev {
+  background-image: url(../img/general/arrow-slider-up.svg);
+  left: 5px;
+}
+
+.training-statistics .main-slider .slick-arrow.slick-next {
+  background-image: url(../img/general/arrow-slider-down.svg);
+  right: 5px;
+}
+
+.training-statistics .main-slider__item {
+  height: 75px;
+  position: relative;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  color: #ababab;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.training-statistics .main-slider__item:focus {
+  outline: none;
+}
+
+.training-statistics .main-slider__item time {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.training-statistics .main-slider__item .attendance_checkbox {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.training-statistics .main-slider__item .attendance_checkbox span::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+.training-statistics .main-slider__item .attendance_checkbox input {
+  z-index: -1;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+}
+
+.training-statistics .main-slider__item .attendance_checkbox input:disabled + span::before {
+  border-color: #ababab;
+}
+
+.training-statistics .main-slider__item .attendance_checkbox input:disabled:checked + span::before {
+  background-color: #ababab;
+}
+
+.training-statistics .main-slider__item.slick-current {
+  color: #059bc1;
+  border-right-color: transparent;
+}
+
+.training-statistics .main-slider__item.slick-current .attendance_checkbox input:disabled + span::before {
+  border-color: #059bc1;
+}
+
+.training-statistics .main-slider__item.slick-current .attendance_checkbox input:disabled:checked + span::before {
+  background-color: #059bc1;
+}
+
+.training-statistics .info-slider {
+  width: 100%;
+  height: 290px;
+}
+
+.training-statistics .info-slider-wrapper {
+  padding-left: 50px;
+  padding-top: 30px;
+  width: 80%;
+  position: relative;
+  min-width: 0;
+}
+
+.training-statistics .info-slider-data {
+  margin-bottom: 2.1875rem;
+}
+
+.training-statistics .info-slider-data .total-distance,
+.training-statistics .info-slider-data .training-time {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.training-statistics .info-slider-data .total-distance::after {
+  content: " м";
+}
+
+.training-statistics .info-slider-data .training-time::after {
+  content: " минут";
+}
+
+.training-statistics .info-slider-buttons button {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #059bc1;
+  border: none;
+  border-radius: 4px;
+  line-height: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.training-statistics .info-slider-buttons button:disabled {
+  background-color: #a7a7a7;
+  cursor: auto;
+}
+
+.training-statistics .info-slider-buttons span {
+  white-space: nowrap;
+}
+
+.training-statistics .info-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.training-statistics .info-slider__item {
+  text-align: center;
+}
+
+.training-statistics .info-slider__item .row-property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.training-statistics .info-slider__item .row-property__length {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.training-statistics .info-slider__item .row-property__length::after {
+  content: " м";
+}
+
+.training-statistics .info-slider__item .row-property__none {
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../img/general/cancel.svg) 50% 50%/0.9rem no-repeat;
+  cursor: pointer;
+}
+
+.training-statistics .info-slider__item .row-property__none:hover {
+  opacity: .7;
+}
+
+.training-statistics .info-slider__item .row-property__mark {
+  display: block;
+  height: 1.2rem;
+  width: 120px;
+  border: 1px solid #ababab;
+  border-radius: 3px;
+  background: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .training-statistics .section-inner {
+    padding: 15px 20px;
+  }
+  .training-statistics .main-slider {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .training-statistics .main-slider .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .training-statistics .main-slider .slick-track div:first-child {
+    border-left: 1px solid #dddddd;
+  }
+  .training-statistics .main-slider__item.slick-current {
+    border-right: 1px solid #dddddd;
+    border-bottom: none;
+  }
+  .training-statistics .main-slider__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+  }
+  .training-statistics .info-slider-wrapper {
+    padding: 15px 10px;
+    width: 100%;
+  }
+  .training-statistics .info-slider-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .training-statistics .info-slider__item .row-property__mark {
+    width: 100px;
+  }
+  .training-statistics__table-header {
+    position: relative;
+  }
+  .training-statistics__table-header .athlete-wrapper {
+    padding: 0 10px;
+    position: absolute;
+    top: 130px;
+    width: 100%;
+  }
+  .training-statistics-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .training-statistics .section-inner {
+    padding: 15px 10px;
+    text-align: center;
+  }
+  .training-statistics .info-slider {
+    height: 200px;
+  }
+  .training-statistics .info-slider__item .row-property__mark {
+    width: 60px;
+  }
+  .training-statistics__table-header {
+    padding-top: 10px;
+  }
+  .training-statistics__table-header .date-location {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .training-statistics__table-header .athlete-wrapper {
+    top: 120px;
+  }
+}
+
+.calendar .section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.calendar .calendar-event-info {
+  position: relative;
+  flex: none;
+}
+
+.calendar .calendar-event-info img {
+  height: 100%;
+}
+
+.calendar .calendar-event-info::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+
+.calendar .calendar-event-info__message-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  height: 70%;
+  padding: 36px 40px;
+}
+
+.calendar .calendar-event-info__message-wrapper span {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 1;
+  width: 80%;
+}
+
+.calendar #calendar {
+  border-bottom: 1px solid #16202e;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.calendar #calendar th, .calendar #calendar td {
+  border: none;
+}
+
+.calendar #calendar .fc-addEventButton-button {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  background-color: #059bc1;
+  border: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.calendar #calendar .fc-addEventButton-button:hover {
+  background-color: #087591;
+}
+
+.calendar #calendar .fc-dayGrid-view .fc-body .fc-row {
+  min-height: 3em;
+}
+
+.calendar #calendar .fc-toolbar h2 {
+  text-transform: capitalize;
+}
+
+.calendar #calendar .fc-content {
+  font-size: 0;
+  height: 10px;
+}
+
+.calendar #calendar .fc-widget-content.fc-today {
+  background: none;
+}
+
+.calendar #calendar .fc-row .fc-highlight-skeleton {
+  z-index: auto;
+}
+
+.calendar #calendar .fc-highlight {
+  background-color: transparent;
+  opacity: 1;
+  position: relative;
+  z-index: 5;
+}
+
+.calendar #calendar .fc-highlight::after, .calendar #calendar .fc-highlight::before {
+  content: '';
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.calendar #calendar .fc-highlight::after {
+  width: calc(1.7rem + 3px);
+  height: calc(1.7rem + 3px);
+  border-width: 3px;
+  border-color: #7ab046;
+}
+
+.calendar #calendar .fc-highlight::before {
+  width: calc(1.7rem - 1px);
+  height: calc(1.7rem - 1px);
+  border-width: 6px;
+  border-color: #000000;
+}
+
+.calendar #calendar .fc-day-header {
+  text-transform: uppercase;
+}
+
+.calendar #calendar .fc-day-top.fc-other-month {
+  opacity: 1;
+  color: #414b58;
+}
+
+.calendar #calendar .fc-day {
+  text-align: center;
+  position: relative;
+}
+
+.calendar #calendar .fc-more-cell {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.calendar #calendar .fc-more {
+  font-size: 0;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.calendar #calendar .fc-more::after {
+  content: '\2022';
+  color: #ecc30a;
+  font-size: 2rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+}
+
+.calendar #calendar .fc-event-container .fc-event {
+  bottom: 9px;
+}
+
+.calendar #calendar .fc-event-container .fc-event.fc-start.fc-not-end {
+  height: 26px;
+  background: -webkit-gradient(linear, left top, right top, from(#1596c4), to(#1396c4));
+  background: linear-gradient(to right, #1596c4, #1396c4);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.calendar #calendar .fc-event-container .fc-event.fc-not-start.fc-end {
+  height: 26px;
+  background: -webkit-gradient(linear, left top, right top, from(#c356e7), to(#ab5ee2));
+  background: linear-gradient(to right, #c356e7, #ab5ee2);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.calendar #calendar .fc-event-container[colspan] {
+  z-index: 1;
+}
+
+.calendar #calendar .fc-event-container[colspan] > a {
+  background: -webkit-gradient(linear, left top, right top, from(#c356e7), to(#1396c4));
+  background: linear-gradient(to right, #c356e7, #1396c4);
+  height: 26px;
+  border: none;
+}
+
+.calendar #calendar .fc-event-container[colspan] .fc-event.fc-start.fc-end {
+  border-radius: 10px;
+}
+
+.calendar #calendar .fc-event-container:not([colspan]) .fc-event.fc-start.fc-end {
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+
+.calendar #calendar .fc-event-container:not([colspan]) .fc-event.fc-start.fc-end::after {
+  content: '\2022';
+  color: #ecc30a;
+  font-size: 2rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+}
+
+.calendar #calendar .fc-day-top {
+  text-align: center;
+  position: relative;
+  top: 15px;
+  z-index: 10;
+}
+
+.calendar #calendar .fc-day-number {
+  float: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+.calendar #calendar .fc-event-container[colspan="2"] .fc-event.fc-start.fc-not-end {
+  background: -webkit-gradient(linear, left top, right top, from(#3889cb), to(#1396c4));
+  background: linear-gradient(to right, #3889cb, #1396c4);
+}
+
+.calendar #calendar .fc-event-container[colspan="2"] .fc-event.fc-not-start.fc-end {
+  background: -webkit-gradient(linear, left top, right top, from(#c356e7), to(#9c64df));
+  background: linear-gradient(to right, #c356e7, #9c64df);
+}
+
+.calendar #calendar .fc-event-container[colspan="3"] .fc-event.fc-start.fc-not-end {
+  background: -webkit-gradient(linear, left top, right top, from(#537fd1), to(#1396c4));
+  background: linear-gradient(to right, #537fd1, #1396c4);
+}
+
+.calendar #calendar .fc-event-container[colspan="3"] .fc-event.fc-not-start.fc-end {
+  background: -webkit-gradient(linear, left top, right top, from(#c356e7), to(#846ddb));
+  background: linear-gradient(to right, #c356e7, #846ddb);
+}
+
+.calendar #calendar .fc-event-container[colspan="4"] .fc-event.fc-start.fc-not-end {
+  background: -webkit-gradient(linear, left top, right top, from(#6b77d6), to(#1396c4));
+  background: linear-gradient(to right, #6b77d6, #1396c4);
+}
+
+.calendar #calendar .fc-event-container[colspan="4"] .fc-event.fc-not-start.fc-end {
+  background: -webkit-gradient(linear, left top, right top, from(#c356e7), to(#6b77d6));
+  background: linear-gradient(to right, #c356e7, #6b77d6);
+}
+
+.calendar #calendar .fc-event-container[colspan="5"] .fc-event.fc-start.fc-not-end {
+  background: -webkit-gradient(linear, left top, right top, from(#846ddb), to(#1396c4));
+  background: linear-gradient(to right, #846ddb, #1396c4);
+}
+
+.calendar #calendar .fc-event-container[colspan="5"] .fc-event.fc-not-start.fc-end {
+  background: -webkit-gradient(linear, left top, right top, from(#c356e7), to(#537fd1));
+  background: linear-gradient(to right, #c356e7, #537fd1);
+}
+
+.calendar #calendar .fc-event-container[colspan="6"] .fc-event.fc-start.fc-not-end {
+  background: -webkit-gradient(linear, left top, right top, from(#9c64df), to(#1396c4));
+  background: linear-gradient(to right, #9c64df, #1396c4);
+}
+
+.calendar #calendar .fc-event-container[colspan="6"] .fc-event.fc-not-start.fc-end {
+  background: -webkit-gradient(linear, left top, right top, from(#c356e7), to(#3889cb));
+  background: linear-gradient(to right, #c356e7, #3889cb);
+}
+
+.calendar #calendar .fc-event-container[colspan="7"] .fc-event.fc-start.fc-not-end,
+.calendar #calendar .fc-event-container[colspan="7"] .fc-event.fc-not-start.fc-end,
+.calendar #calendar .fc-event-container[colspan="7"] .fc-event.fc-not-start.fc-not-end,
+.calendar #calendar .fc-event-container[colspan="7"] .fc-event.fc-start.fc-end {
+  background: -webkit-gradient(linear, left top, right top, from(#c356e7), to(#1396c4));
+  background: linear-gradient(to right, #c356e7, #1396c4);
+}
+
+.calendar .calendar-wrapper {
+  background-color: #000000;
+  z-index: 1;
+  padding: 37px;
+}
+
+.calendar .calendar-wrapper .calendar__time-location {
+  padding-top: 20px;
+  padding-left: 35px;
+  height: 54px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calendar .calendar-wrapper .calendar__time-location .time {
+  color: #ecc30a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.calendar .calendar-wrapper .calendar__time-location .time_hours-span {
+  font-size: 30px;
+}
+
+.calendar .calendar-wrapper .calendar__time-location .time_minutes-span {
+  position: relative;
+  top: -0.5em;
+  font-size: 18px;
+}
+
+.calendar .calendar-wrapper .calendar__time-location .location {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calendar .calendar-wrapper .calendar__time-location .location_duration-span {
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+  .calendar .section-inner {
+    border-radius: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .calendar-event-info {
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .calendar-event-info img {
+    height: auto !important;
+    width: 100%;
+    position: relative;
+    top: -100%;
+  }
+  .calendar-event-info__message-wrapper span {
+    width: auto !important;
+  }
+  .calendar .calendar-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .calendar #calendar .fc-addEventButton-button {
+    left: auto;
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .calendar .calendar-event-info {
+    height: 150px;
+  }
+  .calendar .calendar-event-info__message-wrapper {
+    padding: 12px 12px;
+    text-align: center;
+  }
+  .calendar .calendar-event-info img {
+    top: -50%;
+  }
+  .calendar .calendar-wrapper {
+    padding: 12px;
+  }
+  .calendar .fc-toolbar h2 {
+    font-size: 1em;
+  }
+  .calendar .fc-today-button {
+    font-size: 0.8em;
+    margin: 0.75em;
+  }
+  .calendar #calendar .fc-event-container:not([colspan]) .fc-event.fc-start.fc-end::after {
+    top: 4.2px;
+  }
+  .calendar #calendar .fc-highlight {
+    top: 3px;
+  }
+  .calendar .calendar-wrapper .calendar__time-location {
+    padding-left: 0;
+  }
+  .calendar #calendar .fc-addEventButton-button {
+    position: static;
+    font-size: 0.8rem;
+    line-height: 10px;
+  }
+  .calendar .fc-right {
+    padding-left: 10px;
+  }
+  .calendar .fc-toolbar {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
