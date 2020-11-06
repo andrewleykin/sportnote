@@ -1,0 +1,413 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Страница Атлета'
+	- var page = 'athlete'
+	- var style = 'black'
+
+block content
+	.athlete-page
+		// Athlete info
+		section.section-outer.athlete-info
+			.section-inner
+				.athlete-info-avatar
+					img.athlete-info-avatar__photo(src="app/img/content/avatar-2.jpg" alt="Фотография спортсмена")
+					.athlete-info-avatar__fullname
+						span.name Андреев Иван Сергеевич
+						time.date-birth(datetime="1996-06-09") 9 июня 1996
+				.athlete-info-charts
+					span.athlete-info-charts__title Статистика по спортсмену
+					.athlete-info-charts__wrapper
+						.chart-item
+							.chart-item__svg-wrapper
+								svg.chart-item__svg.pink(viewbox="0 0 36 36")
+									lineargradient#pink(x1="20%" y1="80%" x2="80%" y2="20%")
+										stop(offset="0%" stop-color="#f12c81")
+										stop(offset="100%" stop-color="#e61d56")
+									path.circle-bg(d="M18 2.0845\
+									a 15.9155 15.9155 0 0 1 0 31.831\
+									a 15.9155 15.9155 0 0 1 0 -31.831")
+									path.circle(stroke-dasharray="100, 100" d="M18 2.0845\
+									a 15.9155 15.9155 0 0 1 0 31.831\
+									a 15.9155 15.9155 0 0 1 0 -31.831")
+								span.chart-item__number 14
+							span.chart-item__name Тренировки
+						.chart-item
+							.chart-item__svg-wrapper
+								svg.chart-item__svg.purple(viewbox="0 0 36 36")
+									lineargradient#purple(x1="20%" y1="80%" x2="80%" y2="20%")
+										stop(offset="0%" stop-color="#e34bef")
+										stop(offset="100%" stop-color="#c81ac7")
+									path.circle-bg(d="M18 2.0845\
+									a 15.9155 15.9155 0 0 1 0 31.831\
+									a 15.9155 15.9155 0 0 1 0 -31.831")
+									path.circle(stroke-dasharray="100, 100" d="M18 2.0845\
+									a 15.9155 15.9155 0 0 1 0 31.831\
+									a 15.9155 15.9155 0 0 1 0 -31.831")
+								span.chart-item__number 12,2
+							span.chart-item__name Дистанция (км)
+						.chart-item
+							.chart-item__svg-wrapper
+								svg.chart-item__svg.dodgerblue(viewbox="0 0 36 36")
+									lineargradient#dodgerblue(x1="20%" y1="80%" x2="80%" y2="20%")
+										stop(offset="0%" stop-color="#2dbdf3")
+										stop(offset="100%" stop-color="#1c6fdf")
+									path.circle-bg(d="M18 2.0845\
+									a 15.9155 15.9155 0 0 1 0 31.831\
+									a 15.9155 15.9155 0 0 1 0 -31.831")
+									path.circle(stroke-dasharray="100, 100" d="M18 2.0845\
+									a 15.9155 15.9155 0 0 1 0 31.831\
+									a 15.9155 15.9155 0 0 1 0 -31.831")
+								span.chart-item__number 18,5
+							span.chart-item__name Общее время (ч)
+						.chart-item
+							.chart-item__svg-wrapper
+								svg.chart-item__svg.lime(viewbox="0 0 36 36")
+									lineargradient#lime(x1="20%" y1="80%" x2="80%" y2="20%")
+										stop(offset="0%" stop-color="#8fd515")
+										stop(offset="100%" stop-color="#27ca08")
+									path.circle-bg(d="M18 2.0845\
+									a 15.9155 15.9155 0 0 1 0 31.831\
+									a 15.9155 15.9155 0 0 1 0 -31.831")
+									path.circle(stroke-dasharray="100, 100" d="M18 2.0845\
+									a 15.9155 15.9155 0 0 1 0 31.831\
+									a 15.9155 15.9155 0 0 1 0 -31.831")
+								span.chart-item__number 8
+							span.chart-item__name Место в группе
+					.athlete-info-charts__coach
+						span Тренер:
+						span.name
+							| Микряшов Георгий Викторович
+
+		// Training statistics
+		section.section-outer.training-statistics
+			.section-inner
+				span.training-statistics__title Статистика тренировок
+				.training-statistics__table-header
+					span.date-location Дата, место
+					.athlete-wrapper
+						span Упражнение
+						span Количество
+						span
+						span.score Оценка
+				.training-statistics-table
+					.main-slider
+						.main-slider__item
+							time.date(datetime="2020-08-15") 15.08
+							span.location ЗИЛ
+							label.attendance_checkbox
+								input(type="checkbox" name="true" disabled="")
+								span
+						.main-slider__item
+							time.date(datetime="2020-08-13") 13.08
+							span.location Таганка
+							label.attendance_checkbox
+								input(type="checkbox" name="true" disabled="" checked="")
+								span
+						.main-slider__item
+							time.date(datetime="2020-08-09") 09.08
+							span.location Лужники
+							label.attendance_checkbox
+								input(type="checkbox" name="true" disabled="" checked="")
+								span
+						.main-slider__item
+							time.date(datetime="2020-07-27") 27.07
+							span.location ЗИЛ
+							label.attendance_checkbox
+								input(type="checkbox" name="true" disabled="")
+								span
+						.main-slider__item
+							time.date(datetime="2020-07-20") 20.07
+							span.location Лужники
+							label.attendance_checkbox
+								input(type="checkbox" name="true" disabled="")
+								span
+						.main-slider__item
+							time.date(datetime="2020-07-10") 10.07
+							span.location Таганка
+							label.attendance_checkbox
+								input(type="checkbox" name="true" disabled="")
+								span
+					.info-slider-wrapper
+						.info-slider
+							.info-slider__item
+								.athlete-wrapper
+									.row-property
+										span.row-property__style Кроль на груди
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+							.info-slider__item
+								.athlete-wrapper
+									.row-property
+										span.row-property__style Считаем гребки
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Считаем гребки
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Считаем гребки
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Считаем гребки
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Считаем гребки
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Считаем гребки
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Считаем гребки
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Считаем гребки
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+							.info-slider__item
+								.athlete-wrapper
+									.row-property
+										span.row-property__style Кроль на груди
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+							.info-slider__item
+								.athlete-wrapper
+									.row-property
+										span.row-property__style Кроль на груди
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+							.info-slider__item
+								.athlete-wrapper
+									.row-property
+										span.row-property__style Кроль на груди
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+							.info-slider__item
+								.athlete-wrapper
+									.row-property
+										span.row-property__style Кроль на груди
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+									.row-property
+										span.row-property__style Вольный стиль
+										span.row-property__length 200
+										span.row-property__none
+										input.row-property__mark(type="text")
+						.info-slider-data
+							div
+								span Общая дистанция:
+								span.total-distance 1200
+							div
+								span Время тренировки:
+								span.training-time 45
+						.info-slider-buttons
+							button.info-slider-buttons__add
+								span Загрузить тренировку
+
+		// Calendar
+		section.section-outer.calendar
+			.section-inner
+				.calendar-event-info
+					.calendar-event-info__message-wrapper
+						span 2020
+						span  Готовимся к сборам с 20 августа 
+						span  первые соревнования в октябре 
+					img.calendar-event-info__photo(src="app/img/content/event-photo-1.jpg" alt="")
+				.calendar-wrapper
+					#calendar
+					.calendar__time-location
+						.time
+							span.time_hours-span 18
+							span.time_minutes-span 00
+						.location
+							span.location_duration-span ЗИЛ, 1 час 45 минут
+							span.location_take-span Лопатки, ласты, грузы
