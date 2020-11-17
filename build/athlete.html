@@ -102,7 +102,7 @@
             <section class="section-outer training-statistics">
               <div class="section-inner"><span class="training-statistics__title">Статистика тренировок</span>
                 <div class="training-statistics__table-header"><span class="date-location">Дата, место</span>
-                  <div class="athlete-wrapper"><span>Упражнение</span><span>Количество</span><span></span><span class="score">Оценка</span></div>
+                  <div class="athlete-wrapper"><span>Упражнение</span><span>Количество</span><span>Оценка</span></div>
                 </div>
                 <div class="training-statistics-table">
                   <div class="main-slider">
@@ -147,30 +147,55 @@
                     <div class="info-slider">
                       <div class="info-slider__item">
                         <div class="athlete-wrapper">
-                          <div class="row-property"><span class="row-property__style">Кроль на груди</span><span class="row-property__length">200</span><span class="row-property__none"></span>
-                            <input class="row-property__mark" type="text">
+                          <div class="row-property"><span class="row-property__style">Кроль на груди</span><span class="row-property__length">200</span>
+                            <div class="row-property__score">
+                              <input class="row-property__radio green" type="radio" name="row-1">
+                              <input class="row-property__radio yellow" type="radio" name="row-1" checked>
+                              <input class="row-property__radio red" type="radio" name="row-1">
+                            </div>
                           </div>
-                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span><span class="row-property__none"></span>
-                            <input class="row-property__mark" type="text">
+                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span>
+                            <div class="row-property__score">
+                              <input class="row-property__radio green" type="radio" name="row-2">
+                              <input class="row-property__radio yellow" type="radio" name="row-2" checked>
+                              <input class="row-property__radio red" type="radio" name="row-2">
+                            </div>
                           </div>
-                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span><span class="row-property__none"></span>
-                            <input class="row-property__mark" type="text">
+                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span>
+                            <div class="row-property__score">
+                              <input class="row-property__radio green" type="radio" name="row-3">
+                              <input class="row-property__radio yellow" type="radio" name="row-3" checked>
+                              <input class="row-property__radio red" type="radio" name="row-3">
+                            </div>
                           </div>
-                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span><span class="row-property__none"></span>
-                            <input class="row-property__mark" type="text">
+                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span>
+                            <div class="row-property__score">
+                              <input class="row-property__radio green" type="radio" name="row-4">
+                              <input class="row-property__radio yellow" type="radio" name="row-4" checked>
+                              <input class="row-property__radio red" type="radio" name="row-4">
+                            </div>
                           </div>
-                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span><span class="row-property__none"></span>
-                            <input class="row-property__mark" type="text">
+                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">100</span>
+                            <div class="row-property__score">
+                              <input class="row-property__radio green" type="radio" name="row-5">
+                              <input class="row-property__radio yellow" type="radio" name="row-5" checked>
+                              <input class="row-property__radio red" type="radio" name="row-5">
+                            </div>
                           </div>
-                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span><span class="row-property__none"></span>
-                            <input class="row-property__mark" type="text">
+                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">300</span>
+                            <div class="row-property__score">
+                              <input class="row-property__radio green" type="radio" name="row-6">
+                              <input class="row-property__radio yellow" type="radio" name="row-6" checked>
+                              <input class="row-property__radio red" type="radio" name="row-6">
+                            </div>
                           </div>
-                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span><span class="row-property__none"></span>
-                            <input class="row-property__mark" type="text">
-                          </div>
-                          <div class="row-property"><span class="row-property__style">Вольный стиль</span><span class="row-property__length">200</span><span class="row-property__none"></span>
-                            <input class="row-property__mark" type="text">
-                          </div>
+                        </div>
+                        <div class="info-slider-data">
+                          <p>Общая дистанция:<span class="total-distance">1200</span></p>
+                          <p>Время тренировки:<span class="training-time">45</span></p>
+                        </div>
+                        <div class="info-slider-buttons">
+                          <button class="info-slider-buttons__add"><span>Завершить тренировку</span></button>
                         </div>
                       </div>
                       <div class="info-slider__item">
@@ -313,13 +338,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="info-slider-data">
-                      <div><span>Общая дистанция:</span><span class="total-distance">1200</span></div>
-                      <div><span>Время тренировки:</span><span class="training-time">45</span></div>
-                    </div>
-                    <div class="info-slider-buttons">
-                      <button class="info-slider-buttons__add"><span>Загрузить тренировку</span></button>
                     </div>
                   </div>
                 </div>

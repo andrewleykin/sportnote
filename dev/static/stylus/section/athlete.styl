@@ -472,7 +472,9 @@
 }
 
 .training-statistics .info-slider-data {
-  margin-bottom: 2.1875rem;
+  margin-bottom: 1.1875rem;
+  text-align left
+  margin-top 20px
 }
 
 .training-statistics .info-slider-data .total-distance,
@@ -489,6 +491,10 @@
   content: " минут";
 }
 
+.training-statistics .info-slider-buttons {
+  display flex
+}
+
 .training-statistics .info-slider-buttons button {
   color: #ffffff;
   font-weight: 700;
@@ -498,6 +504,10 @@
   line-height: 2rem;
   padding: 0 1rem;
   cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 .training-statistics .info-slider-buttons button:disabled {
@@ -568,6 +578,32 @@
   background: transparent;
   font-family: 'Montserrat', sans-serif;
 }
+
+.training-statistics .info-slider__item .row-property__radio
+  width 24px
+  height 24px
+  margin-left 12px
+  opacity 0.5
+  cursor pointer
+  appearance: none;
+  border-radius: 50%
+  border 2px solid transparent
+
+  &:checked
+    opacity: 1
+
+  &.yellow
+    border-color #f0f006
+    &:checked
+      background-color #f0f006
+  &.green
+    border-color green
+    &:checked
+      background-color green
+  &.red
+    border-color red
+    &:checked
+      background-color red
 
 @media screen and (max-width: 767px) {
   .training-statistics .section-inner {
