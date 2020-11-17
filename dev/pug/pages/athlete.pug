@@ -88,8 +88,7 @@ block content
 					.athlete-wrapper
 						span Упражнение
 						span Количество
-						span
-						span.score Оценка
+						span Оценка
 				.training-statistics-table
 					.main-slider
 						.main-slider__item
@@ -135,43 +134,53 @@ block content
 									.row-property
 										span.row-property__style Кроль на груди
 										span.row-property__length 200
-										span.row-property__none
-										input.row-property__mark(type="text")
+										.row-property__score
+											input.row-property__radio.green(type="radio" name="row-1")
+											input.row-property__radio.yellow(type="radio" name="row-1" checked)
+											input.row-property__radio.red(type="radio" name="row-1")
 									.row-property
 										span.row-property__style Вольный стиль
 										span.row-property__length 200
-										span.row-property__none
-										input.row-property__mark(type="text")
+										.row-property__score
+											input.row-property__radio.green(type="radio" name="row-2")
+											input.row-property__radio.yellow(type="radio" name="row-2" checked)
+											input.row-property__radio.red(type="radio" name="row-2")
 									.row-property
 										span.row-property__style Вольный стиль
 										span.row-property__length 200
-										span.row-property__none
-										input.row-property__mark(type="text")
+										.row-property__score
+											input.row-property__radio.green(type="radio" name="row-3")
+											input.row-property__radio.yellow(type="radio" name="row-3" checked)
+											input.row-property__radio.red(type="radio" name="row-3")
 									.row-property
 										span.row-property__style Вольный стиль
 										span.row-property__length 200
-										span.row-property__none
-										input.row-property__mark(type="text")
+										.row-property__score
+											input.row-property__radio.green(type="radio" name="row-4")
+											input.row-property__radio.yellow(type="radio" name="row-4" checked)
+											input.row-property__radio.red(type="radio" name="row-4")
 									.row-property
 										span.row-property__style Вольный стиль
-										span.row-property__length 200
-										span.row-property__none
-										input.row-property__mark(type="text")
+										span.row-property__length 100
+										.row-property__score
+											input.row-property__radio.green(type="radio" name="row-5")
+											input.row-property__radio.yellow(type="radio" name="row-5" checked)
+											input.row-property__radio.red(type="radio" name="row-5")
 									.row-property
 										span.row-property__style Вольный стиль
-										span.row-property__length 200
-										span.row-property__none
-										input.row-property__mark(type="text")
-									.row-property
-										span.row-property__style Вольный стиль
-										span.row-property__length 200
-										span.row-property__none
-										input.row-property__mark(type="text")
-									.row-property
-										span.row-property__style Вольный стиль
-										span.row-property__length 200
-										span.row-property__none
-										input.row-property__mark(type="text")
+										span.row-property__length 300
+										.row-property__score
+											input.row-property__radio.green(type="radio" name="row-6")
+											input.row-property__radio.yellow(type="radio" name="row-6" checked)
+											input.row-property__radio.red(type="radio" name="row-6")
+								.info-slider-data
+									p Общая дистанция:
+										span.total-distance 1200
+									p Время тренировки:
+										span.training-time 45
+								.info-slider-buttons
+									button.info-slider-buttons__add
+										span Завершить тренировку
 							.info-slider__item
 								.athlete-wrapper
 									.row-property
@@ -382,16 +391,6 @@ block content
 										span.row-property__length 200
 										span.row-property__none
 										input.row-property__mark(type="text")
-						.info-slider-data
-							div
-								span Общая дистанция:
-								span.total-distance 1200
-							div
-								span Время тренировки:
-								span.training-time 45
-						.info-slider-buttons
-							button.info-slider-buttons__add
-								span Загрузить тренировку
 
 		// Calendar
 		section.section-outer.calendar
